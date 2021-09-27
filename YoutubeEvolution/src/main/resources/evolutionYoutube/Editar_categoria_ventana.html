@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-css-layout width-full>
+   <vaadin-horizontal-layout width-full height="15%" margin>
+    <vaadin-css-layout :center>
+     <vaadin-label plain-text>
+       EDITAR CATEGORIA 
+     </vaadin-label>
+    </vaadin-css-layout>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout width-full>
+    <vaadin-css-layout :center>
+     <vaadin-label plain-text>
+       TÍTULO CATEGORIA 
+     </vaadin-label>
+    </vaadin-css-layout>
+    <vaadin-css-layout :center></vaadin-css-layout>
+   </vaadin-horizontal-layout>
+   <vaadin-css-layout responsive width-full>
+    <vaadin-vertical-layout spacing="false" responsive margin="false">
+     <vaadin-horizontal-layout width-full>
+      <vaadin-vertical-layout>
+       <vaadin-label plain-text>
+         Nombre 
+       </vaadin-label>
+       <vaadin-text-field width="40%" _id="nombre"></vaadin-text-field>
+       <vaadin-vertical-layout margin="false">
+        <vaadin-label plain-text>
+          Logo 
+        </vaadin-label>
+        <vaadin-text-field width="40%" _id="logo"></vaadin-text-field>
+       </vaadin-vertical-layout>
+       <vaadin-vertical-layout spacing="false" margin="false">
+        <vaadin-label plain-text>
+          Edad 
+        </vaadin-label>
+        <vaadin-native-select width="40%" data-item-type="java.lang.String" _id="edad">
+         <option item="3">3</option>
+         <option item="13">13</option>
+         <option item="18">18</option>
+        </vaadin-native-select>
+       </vaadin-vertical-layout>
+      </vaadin-vertical-layout>
+     </vaadin-horizontal-layout>
+    </vaadin-vertical-layout>
+   </vaadin-css-layout>
+   <vaadin-horizontal-layout width-full height="133px">
+    <vaadin-vertical-layout size-auto margin="false" :center>
+     <vaadin-button width="159px" height="37px" plain-text _id="guardar">
+       GUARDAR 
+     </vaadin-button>
+    </vaadin-vertical-layout>
+    <vaadin-vertical-layout size-auto margin="false">
+     <vaadin-button width="132px" height="37px" plain-text _id="atras">
+       &lt;&lt;ATRÁS 
+     </vaadin-button>
+    </vaadin-vertical-layout>
+   </vaadin-horizontal-layout>
+  </vaadin-css-layout>
+ </body>
+</html>

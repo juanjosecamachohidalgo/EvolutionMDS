@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout>
+   <vaadin-vertical-layout size-auto margin="false">
+    <vaadin-label>
+     <h2><b>Recuperar contraseña</b></h2>
+    </vaadin-label>
+   </vaadin-vertical-layout>
+   <vaadin-horizontal-layout margin>
+    <vaadin-label plain-text>
+      Correo electrónico: 
+    </vaadin-label>
+    <vaadin-text-field height="25px" _id="correo" :right></vaadin-text-field>
+   </vaadin-horizontal-layout>
+   <vaadin-vertical-layout size-auto></vaadin-vertical-layout>
+   <vaadin-horizontal-layout height-full :middle :center>
+    <vaadin-button plain-text _id="cancelar" :right>
+      Cancelar 
+    </vaadin-button>
+    <vaadin-button plain-text _id="recuperar" :right>
+      Recuperar Contraseña 
+    </vaadin-button>
+   </vaadin-horizontal-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

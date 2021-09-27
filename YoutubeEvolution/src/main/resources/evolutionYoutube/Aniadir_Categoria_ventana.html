@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout size-full>
+   <vaadin-vertical-layout responsive size-auto margin="false">
+    <vaadin-label responsive>
+     <h2><b>Añadir categoria</b></h2>
+    </vaadin-label>
+   </vaadin-vertical-layout>
+   <vaadin-horizontal-layout width="70%" margin>
+    <vaadin-label plain-text>
+      Categoría: 
+    </vaadin-label>
+    <vaadin-text-field height="25px" _id="categoria"></vaadin-text-field>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout width="70%" margin>
+    <vaadin-label plain-text>
+      Contraseña: 
+    </vaadin-label>
+    <vaadin-text-field height="25px" _id="contrasenia"></vaadin-text-field>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout width="70%" margin>
+    <vaadin-label plain-text>
+      Edad mínima: 
+    </vaadin-label>
+    <vaadin-combo-box height="25px" data-item-type="java.lang.String" _id="edad">
+     <option item="1">3</option>
+     <option item="2">13</option>
+     <option item="3">18</option>
+    </vaadin-combo-box>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout width="70%" margin>
+    <vaadin-label plain-text>
+      Introduce una imagen: 
+    </vaadin-label>
+    <vaadin-text-field height="25px" _id="urlImagen"></vaadin-text-field>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout width-full margin>
+    <vaadin-label plain-text>
+      ¿Está seguro de añadir la categoria? 
+    </vaadin-label>
+    <vaadin-check-box _id="check" :middle></vaadin-check-box>
+   </vaadin-horizontal-layout>
+   <vaadin-vertical-layout size-auto></vaadin-vertical-layout>
+   <vaadin-horizontal-layout height-full :middle :right>
+    <vaadin-button width-full plain-text _id="cancelar" :middle :right>
+      Cancelar 
+    </vaadin-button>
+    <vaadin-button plain-text _id="aniadirCategoria" :middle :right>
+      Añadir categoría 
+    </vaadin-button>
+   </vaadin-horizontal-layout>
+   <vaadin-vertical-layout size-auto></vaadin-vertical-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

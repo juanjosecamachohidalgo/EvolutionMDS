@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-css-layout responsive width-full>
+   <vaadin-css-layout responsive width="30%" height-full>
+    <vaadin-image source="https://image.ibb.co/d4Y7YT/logo.png" responsive width="75%" height="75%"></vaadin-image>
+   </vaadin-css-layout>
+   <vaadin-vertical-layout responsive width="70%">
+    <vaadin-horizontal-layout responsive width-full>
+     <vaadin-text-field responsive width-full _id="texto"></vaadin-text-field>
+     <vaadin-combo-box responsive data-item-type="java.lang.String" _id="tipo">
+      <option item="Usuario">Usuario</option>
+      <option item="Video">Video</option>
+      <option item="Categoria">Categoria</option>
+      <option item="Etiqueta">Etiqueta</option>
+     </vaadin-combo-box>
+     <vaadin-button responsive plain-text _id="buscar">
+       Buscar 
+     </vaadin-button>
+    </vaadin-horizontal-layout>
+    <vaadin-horizontal-layout responsive width-full>
+     <vaadin-horizontal-layout responsive width="30%">
+      <vaadin-label>
+       <b>Categorías:</b>
+      </vaadin-label>
+      <vaadin-horizontal-layout responsive width-full _id="categoria"></vaadin-horizontal-layout>
+     </vaadin-horizontal-layout>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+  </vaadin-css-layout>
+ </body>
+</html>

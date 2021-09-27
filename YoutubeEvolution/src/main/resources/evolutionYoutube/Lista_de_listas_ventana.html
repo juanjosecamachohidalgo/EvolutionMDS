@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout size-full>
+   <vaadin-css-layout width="75%" height="2500px">
+    <vaadin-vertical-layout>
+     <vaadin-horizontal-layout width-full>
+      <vaadin-label :center>
+       <h2><b>LISTAS DE REPRODUCCIÓN</b></h2>
+      </vaadin-label>
+      <vaadin-button plain-text :right>
+        CERRAR SESIÓN 
+      </vaadin-button>
+     </vaadin-horizontal-layout>
+     <vaadin-horizontal-layout width-full>
+      <vaadin-button plain-text _id="crearlista" :right>
+        CREAR LISTA 
+      </vaadin-button>
+      <vaadin-text-field _id="nombrelista"></vaadin-text-field>
+     </vaadin-horizontal-layout>
+    </vaadin-vertical-layout>
+    <vaadin-horizontal-layout _id="listas"></vaadin-horizontal-layout>
+   </vaadin-css-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

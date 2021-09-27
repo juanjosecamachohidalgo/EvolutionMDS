@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Model quotesql="1" tablecharset="" mysql_version="505" mssql_version="2005" derby_version="106" ingres_version="9">
+  <Entity name="Usuario_registrado" Unlogged="false" PKClustered="0">
+    <Column name="Id_Usuario_registrado">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Anio">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>27</Type>
+      <Length>255</Length>
+      <Nullable>true</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="NumeroVisitas">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Edad">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="UsuariosID">
+      <PrimaryKey>true</PrimaryKey>
+      <ForeignKey>true</ForeignKey>
+      <ReferencedColumn>Usuarios.ID</ReferencedColumn>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Usuario_registradoUsuariosID">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>true</ForeignKey>
+      <ReferencedColumn>Usuario_registrado.UsuariosID</ReferencedColumn>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>true</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+  </Entity>
+  <Entity name="Videos" Unlogged="false" PKClustered="0">
+    <Column name="Id_video">
+      <PrimaryKey>true</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Usuario_registradoUsuariosID">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>true</ForeignKey>
+      <ReferencedColumn>Usuario_registrado.UsuariosID</ReferencedColumn>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Categorias2Id_categoria">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>true</ForeignKey>
+      <ReferencedColumn>Categorias.Id_categoria</ReferencedColumn>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Miniatura">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>27</Type>
+      <Length>255</Length>
+      <Nullable>true</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Titulo">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>27</Type>
+      <Length>255</Length>
+      <Nullable>true</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="DescrVideo">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>27</Type>
+      <Length>255</Length>
+      <Nullable>true</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Fecha">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>27</Type>
+      <Length>255</Length>
+      <Nullable>true</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="NumVisualizaciones">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="ContenidoVideo">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>27</Type>
+      <Length>255</Length>
+      <Nullable>true</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Etiquetas">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>27</Type>
+      <Length>255</Length>
+      <Nullable>true</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Duracion">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+  </Entity>
+  <Entity name="Listas_de_reproduccion" Unlogged="false" PKClustered="0">
+    <Column name="Id_lista">
+      <PrimaryKey>true</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Usuario_registradoUsuariosID2">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>true</ForeignKey>
+      <ReferencedColumn>Usuario_registrado.UsuariosID</ReferencedColumn>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>true</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Usuario_registradoUsuariosID">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>true</ForeignKey>
+      <ReferencedColumn>Usuario_registrado.UsuariosID</ReferencedColumn>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Num_videos">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Nombre">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>27</Type>
+      <Length>255</Length>
+      <Nullable>true</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+  </Entity>
+  <Entity name="Usuario_Administrador" Unlogged="false" PKClustered="0">
+    <Column name="Id_Usuario_Administrador">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="UsuariosID">
+      <PrimaryKey>true</PrimaryKey>
+      <ForeignKey>true</ForeignKey>
+      <ReferencedColumn>Usuarios.ID</ReferencedColumn>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+  </Entity>
+  <Entity name="Usuarios" Unlogged="false" PKClustered="0">
+    <Column name="ID">
+      <PrimaryKey>true</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Nombre">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>27</Type>
+      <Length>255</Length>
+      <Nullable>true</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Apellido">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>27</Type>
+      <Length>255</Length>
+      <Nullable>true</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Email">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>27</Type>
+      <Length>255</Length>
+      <Nullable>true</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Contrasenia">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>27</Type>
+      <Length>255</Length>
+      <Nullable>true</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Apodo">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>27</Type>
+      <Length>255</Length>
+      <Nullable>true</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Avatar">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>27</Type>
+      <Length>255</Length>
+      <Nullable>true</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+  </Entity>
+  <Entity name="Categorias" Unlogged="false" PKClustered="0">
+    <Column name="Id_categoria">
+      <PrimaryKey>true</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Nombre">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>27</Type>
+      <Length>255</Length>
+      <Nullable>true</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Edad">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Icono">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>27</Type>
+      <Length>255</Length>
+      <Nullable>true</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+  </Entity>
+  <Entity name="Comentarios" Unlogged="false" PKClustered="0">
+    <Column name="Id_comentario">
+      <PrimaryKey>true</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="VideosId_video">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>true</ForeignKey>
+      <ReferencedColumn>Videos.Id_video</ReferencedColumn>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Usuario_registradoUsuariosID">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>true</ForeignKey>
+      <ReferencedColumn>Usuario_registrado.UsuariosID</ReferencedColumn>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Contenido_comentario">
+      <PrimaryKey>false</PrimaryKey>
+      <ForeignKey>false</ForeignKey>
+      <Type>27</Type>
+      <Length>255</Length>
+      <Nullable>true</Nullable>
+      <IDGenerator>native</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+  </Entity>
+  <Entity name="Videos_Listas_de_reproduccion2" Unlogged="false" PKClustered="0">
+    <Column name="VideosId_video">
+      <PrimaryKey>true</PrimaryKey>
+      <ForeignKey>true</ForeignKey>
+      <ReferencedColumn>Videos.Id_video</ReferencedColumn>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>assigned</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Listas_de_reproduccion2Id_lista">
+      <PrimaryKey>true</PrimaryKey>
+      <ForeignKey>true</ForeignKey>
+      <ReferencedColumn>Listas_de_reproduccion.Id_lista</ReferencedColumn>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>assigned</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+  </Entity>
+  <Entity name="Videos_Usuario_registrado" Unlogged="false" PKClustered="0">
+    <Column name="VideosId_video">
+      <PrimaryKey>true</PrimaryKey>
+      <ForeignKey>true</ForeignKey>
+      <ReferencedColumn>Videos.Id_video</ReferencedColumn>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>assigned</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Usuario_registradoUsuariosID">
+      <PrimaryKey>true</PrimaryKey>
+      <ForeignKey>true</ForeignKey>
+      <ReferencedColumn>Usuario_registrado.UsuariosID</ReferencedColumn>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>assigned</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+  </Entity>
+  <Entity name="Usuario_registrado_Usuario_registrado" Unlogged="false" PKClustered="0">
+    <Column name="Usuario_registradoUsuariosID">
+      <PrimaryKey>true</PrimaryKey>
+      <ForeignKey>true</ForeignKey>
+      <ReferencedColumn>Usuario_registrado.UsuariosID</ReferencedColumn>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>assigned</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Usuario_registradoUsuariosID2">
+      <PrimaryKey>true</PrimaryKey>
+      <ForeignKey>true</ForeignKey>
+      <ReferencedColumn>Usuario_registrado.UsuariosID</ReferencedColumn>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>assigned</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+  </Entity>
+  <Entity name="Videos_Usuario_registrado2" Unlogged="false" PKClustered="0">
+    <Column name="VideosId_video">
+      <PrimaryKey>true</PrimaryKey>
+      <ForeignKey>true</ForeignKey>
+      <ReferencedColumn>Videos.Id_video</ReferencedColumn>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>assigned</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+    <Column name="Usuario_registradoUsuariosID">
+      <PrimaryKey>true</PrimaryKey>
+      <ForeignKey>true</ForeignKey>
+      <ReferencedColumn>Usuario_registrado.UsuariosID</ReferencedColumn>
+      <Type>9</Type>
+      <Length>10</Length>
+      <Nullable>false</Nullable>
+      <IDGenerator>assigned</IDGenerator>
+      <Unique>false</Unique>
+      <Index>false</Index>
+      <UserTypes/>
+    </Column>
+  </Entity>
+  <ForeignKey name="FKUsuario_re867507">
+    <ReferenceTable>Usuario_registrado</ReferenceTable>
+    <ReferencedTable>Usuarios</ReferencedTable>
+    <Columns>
+      <Column>UsuariosID</Column>
+    </Columns>
+    <RefColumns>
+      <Column>ID</Column>
+    </RefColumns>
+  </ForeignKey>
+  <ForeignKey name="FKUsuario_Ad714075">
+    <ReferenceTable>Usuario_Administrador</ReferenceTable>
+    <ReferencedTable>Usuarios</ReferencedTable>
+    <Columns>
+      <Column>UsuariosID</Column>
+    </Columns>
+    <RefColumns>
+      <Column>ID</Column>
+    </RefColumns>
+  </ForeignKey>
+  <ForeignKey name="FKComentario567526">
+    <ReferenceTable>Comentarios</ReferenceTable>
+    <ReferencedTable>Usuario_registrado</ReferencedTable>
+    <Columns>
+      <Column>Usuario_registradoUsuariosID</Column>
+    </Columns>
+    <RefColumns>
+      <Column>UsuariosID</Column>
+    </RefColumns>
+  </ForeignKey>
+  <ForeignKey name="FKListas_de_502848">
+    <ReferenceTable>Listas_de_reproduccion</ReferenceTable>
+    <ReferencedTable>Usuario_registrado</ReferencedTable>
+    <Columns>
+      <Column>Usuario_registradoUsuariosID</Column>
+    </Columns>
+    <RefColumns>
+      <Column>UsuariosID</Column>
+    </RefColumns>
+  </ForeignKey>
+  <ForeignKey name="FKVideos10708">
+    <ReferenceTable>Videos</ReferenceTable>
+    <ReferencedTable>Categorias</ReferencedTable>
+    <Columns>
+      <Column>Categorias2Id_categoria</Column>
+    </Columns>
+    <RefColumns>
+      <Column>Id_categoria</Column>
+    </RefColumns>
+  </ForeignKey>
+  <ForeignKey name="FKUsuario_re930259">
+    <ReferenceTable>Usuario_registrado</ReferenceTable>
+    <ReferencedTable>Usuario_registrado</ReferencedTable>
+    <Columns>
+      <Column>Usuario_registradoUsuariosID</Column>
+    </Columns>
+    <RefColumns>
+      <Column>UsuariosID</Column>
+    </RefColumns>
+  </ForeignKey>
+  <ForeignKey name="FKVideos178932">
+    <ReferenceTable>Videos</ReferenceTable>
+    <ReferencedTable>Usuario_registrado</ReferencedTable>
+    <Columns>
+      <Column>Usuario_registradoUsuariosID</Column>
+    </Columns>
+    <RefColumns>
+      <Column>UsuariosID</Column>
+    </RefColumns>
+  </ForeignKey>
+  <ForeignKey name="FKVideos_Lis288440">
+    <ReferenceTable>Videos_Listas_de_reproduccion2</ReferenceTable>
+    <ReferencedTable>Videos</ReferencedTable>
+    <Columns>
+      <Column>VideosId_video</Column>
+    </Columns>
+    <RefColumns>
+      <Column>Id_video</Column>
+    </RefColumns>
+  </ForeignKey>
+  <ForeignKey name="FKVideos_Lis200603">
+    <ReferenceTable>Videos_Listas_de_reproduccion2</ReferenceTable>
+    <ReferencedTable>Listas_de_reproduccion</ReferencedTable>
+    <Columns>
+      <Column>Listas_de_reproduccion2Id_lista</Column>
+    </Columns>
+    <RefColumns>
+      <Column>Id_lista</Column>
+    </RefColumns>
+  </ForeignKey>
+  <ForeignKey name="FKListas_de_695231">
+    <ReferenceTable>Listas_de_reproduccion</ReferenceTable>
+    <ReferencedTable>Usuario_registrado</ReferencedTable>
+    <Columns>
+      <Column>Usuario_registradoUsuariosID2</Column>
+    </Columns>
+    <RefColumns>
+      <Column>UsuariosID</Column>
+    </RefColumns>
+  </ForeignKey>
+  <ForeignKey name="FKComentario972846">
+    <ReferenceTable>Comentarios</ReferenceTable>
+    <ReferencedTable>Videos</ReferencedTable>
+    <Columns>
+      <Column>VideosId_video</Column>
+    </Columns>
+    <RefColumns>
+      <Column>Id_video</Column>
+    </RefColumns>
+  </ForeignKey>
+  <ForeignKey name="FKVideos_Usu75029">
+    <ReferenceTable>Videos_Usuario_registrado</ReferenceTable>
+    <ReferencedTable>Videos</ReferencedTable>
+    <Columns>
+      <Column>VideosId_video</Column>
+    </Columns>
+    <RefColumns>
+      <Column>Id_video</Column>
+    </RefColumns>
+  </ForeignKey>
+  <ForeignKey name="FKVideos_Usu615402">
+    <ReferenceTable>Videos_Usuario_registrado</ReferenceTable>
+    <ReferencedTable>Usuario_registrado</ReferencedTable>
+    <Columns>
+      <Column>Usuario_registradoUsuariosID</Column>
+    </Columns>
+    <RefColumns>
+      <Column>UsuariosID</Column>
+    </RefColumns>
+  </ForeignKey>
+  <ForeignKey name="FKUsuario_re650086">
+    <ReferenceTable>Usuario_registrado_Usuario_registrado</ReferenceTable>
+    <ReferencedTable>Usuario_registrado</ReferencedTable>
+    <Columns>
+      <Column>Usuario_registradoUsuariosID</Column>
+    </Columns>
+    <RefColumns>
+      <Column>UsuariosID</Column>
+    </RefColumns>
+  </ForeignKey>
+  <ForeignKey name="FKUsuario_re513887">
+    <ReferenceTable>Usuario_registrado_Usuario_registrado</ReferenceTable>
+    <ReferencedTable>Usuario_registrado</ReferencedTable>
+    <Columns>
+      <Column>Usuario_registradoUsuariosID2</Column>
+    </Columns>
+    <RefColumns>
+      <Column>UsuariosID</Column>
+    </RefColumns>
+  </ForeignKey>
+  <ForeignKey name="FKVideos_Usu676931">
+    <ReferenceTable>Videos_Usuario_registrado2</ReferenceTable>
+    <ReferencedTable>Videos</ReferencedTable>
+    <Columns>
+      <Column>VideosId_video</Column>
+    </Columns>
+    <RefColumns>
+      <Column>Id_video</Column>
+    </RefColumns>
+  </ForeignKey>
+  <ForeignKey name="FKVideos_Usu217305">
+    <ReferenceTable>Videos_Usuario_registrado2</ReferenceTable>
+    <ReferencedTable>Usuario_registrado</ReferencedTable>
+    <Columns>
+      <Column>Usuario_registradoUsuariosID</Column>
+    </Columns>
+    <RefColumns>
+      <Column>UsuariosID</Column>
+    </RefColumns>
+  </ForeignKey>
+</Model>

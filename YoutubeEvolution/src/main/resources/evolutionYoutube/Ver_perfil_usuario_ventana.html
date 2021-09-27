@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-css-layout responsive width-full>
+   <vaadin-vertical-layout margin="false">
+    <vaadin-image source="https://image.ibb.co/bKS6So/cabecera.png" width-full height="98.44%"></vaadin-image>
+   </vaadin-vertical-layout>
+   <vaadin-css-layout width-full>
+    <vaadin-css-layout width-full>
+     <vaadin-css-layout width="25%">
+      <vaadin-vertical-layout responsive>
+       <vaadin-horizontal-layout margin _id="avatar" :center></vaadin-horizontal-layout>
+       <vaadin-horizontal-layout width-full>
+        <vaadin-label responsive plain-text _id="apodo" :center>
+          @USUARIO 
+        </vaadin-label>
+       </vaadin-horizontal-layout>
+       <vaadin-horizontal-layout width-full>
+        <vaadin-label responsive plain-text _id="visitas" :center>
+          - Número de visitas 
+        </vaadin-label>
+       </vaadin-horizontal-layout>
+       <vaadin-horizontal-layout width-full>
+        <vaadin-label responsive plain-text _id="numerosuscriptores" :center>
+          - Número de suscriptores 
+        </vaadin-label>
+       </vaadin-horizontal-layout>
+       <vaadin-horizontal-layout :center>
+        <vaadin-native-button responsive width-full plain-text _id="volver" :center>
+          &lt;&lt;Volver 
+        </vaadin-native-button>
+       </vaadin-horizontal-layout>
+       <vaadin-horizontal-layout width-full>
+        <vaadin-native-button responsive plain-text _id="suscribirse" :center>
+          Registrarse 
+        </vaadin-native-button>
+       </vaadin-horizontal-layout>
+      </vaadin-vertical-layout>
+     </vaadin-css-layout>
+     <vaadin-css-layout responsive width="75%">
+      <vaadin-vertical-layout responsive>
+       <vaadin-vertical-layout margin="false">
+        <vaadin-horizontal-layout responsive width-full margin>
+         <vaadin-label>
+          <h2><b>Videos subidos</b></h2>
+         </vaadin-label>
+        </vaadin-horizontal-layout>
+        <vaadin-horizontal-layout responsive width-full margin _id="videossubidos"></vaadin-horizontal-layout>
+       </vaadin-vertical-layout>
+      </vaadin-vertical-layout>
+      <vaadin-vertical-layout responsive margin="false">
+       <vaadin-vertical-layout>
+        <vaadin-horizontal-layout responsive width-full margin>
+         <vaadin-label>
+          <h2><b>Listas de reproduccion</b></h2>
+         </vaadin-label>
+        </vaadin-horizontal-layout>
+        <vaadin-horizontal-layout responsive width-full margin _id="listas_reproduccion"></vaadin-horizontal-layout>
+        <vaadin-vertical-layout>
+         <vaadin-horizontal-layout responsive width-full>
+          <vaadin-label>
+           <h2><b>Seguidores</b></h2>
+          </vaadin-label>
+         </vaadin-horizontal-layout>
+         <vaadin-vertical-layout responsive _id="suscripciones"></vaadin-vertical-layout>
+        </vaadin-vertical-layout>
+        <vaadin-vertical-layout>
+         <vaadin-horizontal-layout responsive width-full>
+          <vaadin-label>
+           <h2><b>Suscriptores</b></h2>
+          </vaadin-label>
+         </vaadin-horizontal-layout>
+         <vaadin-horizontal-layout responsive width-full margin _id="listas_reproduccion1"></vaadin-horizontal-layout>
+         <vaadin-vertical-layout _id="seguidores"></vaadin-vertical-layout>
+        </vaadin-vertical-layout>
+       </vaadin-vertical-layout>
+      </vaadin-vertical-layout>
+     </vaadin-css-layout>
+    </vaadin-css-layout>
+   </vaadin-css-layout>
+  </vaadin-css-layout>
+ </body>
+</html>

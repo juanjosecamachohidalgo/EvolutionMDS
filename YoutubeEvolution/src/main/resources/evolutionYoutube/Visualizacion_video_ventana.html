@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout style-name="layoutGeneral" margin="false">
+   <vaadin-vertical-layout margin="false">
+    <vaadin-css-layout width-full>
+     <vaadin-vertical-layout width="30%" margin="false">
+      <vaadin-image source="https://image.ibb.co/d4Y7YT/logo.png" width-full></vaadin-image>
+      <vaadin-button plain-text _id="volver" :center>
+        Volver 
+      </vaadin-button>
+      <vaadin-vertical-layout>
+       <vaadin-image source="https://image.ibb.co/eO6cYT/banner.png" width-full></vaadin-image>
+      </vaadin-vertical-layout>
+     </vaadin-vertical-layout>
+     <vaadin-vertical-layout width="70%" margin="false">
+      <vaadin-video width-full _id="video"></vaadin-video>
+      <vaadin-vertical-layout spacing="false" margin="false">
+       <vaadin-horizontal-layout width-full>
+        <vaadin-label width-full _id="titulo">
+         <b></b>
+         <h1><b>Título del vídeo</b></h1>
+        </vaadin-label>
+        <vaadin-horizontal-layout width-full _id="botonesOpciones">
+         <vaadin-button visible="false" enabled="false" plain-text _id="eliminarVideo">
+           Eliminar Video 
+         </vaadin-button>
+         <vaadin-button visible="false" enabled="false" plain-text _id="meGusta">
+           Me gusta 
+         </vaadin-button>
+         <vaadin-button plain-text _id="descargar">
+           Descargar 
+         </vaadin-button>
+        </vaadin-horizontal-layout>
+        <vaadin-vertical-layout spacing="false" margin="false">
+         <vaadin-horizontal-layout width-full>
+          <vaadin-label plain-text _id="nombre" :center>
+            Usuario 
+          </vaadin-label>
+         </vaadin-horizontal-layout>
+         <vaadin-horizontal-layout _id="avatar" :center></vaadin-horizontal-layout>
+        </vaadin-vertical-layout>
+       </vaadin-horizontal-layout>
+       <vaadin-horizontal-layout width-full height="20px"></vaadin-horizontal-layout>
+       <vaadin-horizontal-layout>
+        <vaadin-label plain-text>
+          Fecha de subida : 
+        </vaadin-label>
+        <vaadin-label plain-text _id="fecha">
+          11/11/11 
+        </vaadin-label>
+        <vaadin-image source="https://image.ibb.co/nvegtT/visualizaciones.png" width="40px" height="40px"></vaadin-image>
+        <vaadin-label plain-text _id="visualizaciones">
+          0 
+        </vaadin-label>
+        <vaadin-image source="https://image.ibb.co/fdvzf8/like.png" width="40px" height="40px"></vaadin-image>
+        <vaadin-label plain-text _id="like">
+          Label 
+        </vaadin-label>
+       </vaadin-horizontal-layout>
+       <vaadin-horizontal-layout width-full>
+        <vaadin-horizontal-layout>
+         <vaadin-label plain-text>
+           Categorias: 
+         </vaadin-label>
+         <vaadin-label plain-text _id="categoria">
+           Deporte y cultura 
+         </vaadin-label>
+        </vaadin-horizontal-layout>
+        <vaadin-horizontal-layout>
+         <vaadin-label plain-text>
+           Etiquetas: 
+         </vaadin-label>
+         <vaadin-label plain-text _id="etiquetas">
+           Deporte y cultura 
+         </vaadin-label>
+        </vaadin-horizontal-layout>
+       </vaadin-horizontal-layout>
+       <vaadin-horizontal-layout margin _id="aniadirALista">
+        <vaadin-label plain-text>
+          ¡Añadelo a una de tus listas! 
+        </vaadin-label>
+        <vaadin-combo-box data-item-type="java.lang.String" _id="comboBox"></vaadin-combo-box>
+        <vaadin-button plain-text _id="aniadeALista">
+          Añadir 
+        </vaadin-button>
+       </vaadin-horizontal-layout>
+      </vaadin-vertical-layout>
+      <vaadin-horizontal-layout spacing="false" width-full>
+       <vaadin-text-area width-full height="300px" _id="descripcion">
+         Descripcion del vídeo 
+       </vaadin-text-area>
+      </vaadin-horizontal-layout>
+      <vaadin-vertical-layout margin="false">
+       <vaadin-button enabled="false" plain-text _id="comentarios">
+         Activar/desactivar comentarios 
+       </vaadin-button>
+      </vaadin-vertical-layout>
+      <vaadin-vertical-layout margin="false" _id="escribirComentario"></vaadin-vertical-layout>
+      <vaadin-vertical-layout margin="false" _id="listaComentarios"></vaadin-vertical-layout>
+     </vaadin-vertical-layout>
+    </vaadin-css-layout>
+   </vaadin-vertical-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

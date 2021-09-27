@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout size-full>
+   <vaadin-vertical-layout size-auto margin="false">
+    <vaadin-label>
+     <h2><b>Registrarse</b></h2>
+    </vaadin-label>
+   </vaadin-vertical-layout>
+   <vaadin-horizontal-layout width="70%" margin>
+    <vaadin-label plain-text>
+      Nombre 
+    </vaadin-label>
+    <vaadin-text-field height="25px" _id="nombre"></vaadin-text-field>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout width="70%" margin>
+    <vaadin-label plain-text>
+      Apellidos 
+    </vaadin-label>
+    <vaadin-text-field height="25px" _id="apellidos"></vaadin-text-field>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout width="70%" margin>
+    <vaadin-label plain-text>
+      Apodo 
+    </vaadin-label>
+    <vaadin-text-field height="25px" _id="apodo"></vaadin-text-field>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout width="70%" margin>
+    <vaadin-label plain-text>
+      Edad 
+    </vaadin-label>
+    <vaadin-combo-box height="25px" data-item-type="java.lang.String" _id="edad">
+     <option item="12">12</option>
+     <option item="17">17</option>
+     <option item="40">40</option>
+    </vaadin-combo-box>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout width="70%" margin>
+    <vaadin-label plain-text>
+      Email 
+    </vaadin-label>
+    <vaadin-text-field height="25px" _id="email"></vaadin-text-field>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout width="70%" margin>
+    <vaadin-label plain-text>
+      Contraseña 
+    </vaadin-label>
+    <vaadin-text-field height="25px" _id="contrasenia"></vaadin-text-field>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout width="70%" margin>
+    <vaadin-label plain-text>
+      Confirmar 
+    </vaadin-label>
+    <vaadin-text-field height="25px" _id="confirmar"></vaadin-text-field>
+   </vaadin-horizontal-layout>
+   <vaadin-vertical-layout size-auto></vaadin-vertical-layout>
+   <vaadin-horizontal-layout height-full :middle :right>
+    <vaadin-button width-full plain-text _id="cancelarBoton" :middle :right>
+      Cancelar 
+    </vaadin-button>
+    <vaadin-button plain-text _id="registrarseBoton" :middle :right>
+      Registrarse 
+    </vaadin-button>
+   </vaadin-horizontal-layout>
+   <vaadin-vertical-layout size-auto></vaadin-vertical-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>
